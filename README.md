@@ -60,7 +60,7 @@ $ redis-cli --eval stal.lua , '["SDIFF", ["SUNION", "A", "C"], "B"]'
 `ZINTERSTORE` and `ZUNIONSTORE` respectively in order to perform
 the underlying operations, and it takes care of generating and
 deleting any temporary keys. Furthermore, the temporary keys are
-note replicated to the slaves and are not appended to AOF.
+not replicated to the slaves and are not appended to AOF.
 
 All the nested commands in the s-expression will have a temporary
 key passed as the first argument. That means only commands that can
